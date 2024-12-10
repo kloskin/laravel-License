@@ -17,10 +17,16 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+
+    const ROLE_USER = 'user';
+    const ROLE_MODERATOR = 'moderator';
+    const ROLE_ADMIN = 'admin';
+
     protected $fillable = [
         'name',
         'email',
         'password',
+        'role'
     ];
 
     /**
@@ -45,7 +51,7 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
-    
+
     public function licenseRequests()
     {
         return $this->hasMany(LicenseRequest::class);

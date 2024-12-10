@@ -1,0 +1,332 @@
+/*KOLORY*/
+
+/*
+#242582 - main
+#553D67 - secondary
+#F64C72 - buttons, borders, hovers
+#99738E - details
+#2F2FA2 - details2
+
+*/
+
+body {
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    background-attachment: fixed; /*edit*/
+}
+
+
+/*licenseRequest*/
+#hidden_select {
+    display: none;
+}
+
+#hidden_div {
+    display: none;
+}
+
+/*Navbar*/
+.navbar {
+    /*background: transparent;*/
+    margin-top: 10px;
+
+}
+.navbar .dropdown-menu{
+    background-color: #f5355c;
+    color: #fff;
+    box-shadow: 0px 2px 2px 0.1rem #f12a52;
+    border: 1px solid white;
+
+}
+.dropdown.show .dropdown-menu {
+
+}
+.navbar .dropdown-menu:active{
+    color:white;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.nav-link {
+    color: white;
+    font-weight: bold;
+    /*margin: 0;*/
+}
+.nav-link:hover {
+    font-weight: 800;
+}
+.navbar-nav .nav-link.show {
+    color: white;
+}
+.navbar .dropdown-menu .dropdown-item{
+    color: #fff;
+    border-bottom: 1px solid white;
+    transition: .2s;
+}
+.navbar .dropdown-menu .dropdown-item:hover{
+    color: #f5355c;
+    background-color: white;
+    font-weight: bold;
+}
+.navbar .btn-outline-primary {
+    border: 4px solid white;
+    color:white;
+    font-weight: bold;
+    border-radius: 0;
+}
+.navbar .btn-outline-primary:hover {
+    background-color: white;
+    border-color: white;
+    color: #F64C72;
+}
+.offcanvas-title:hover{
+    color: rgba(0, 0, 0, 0.8);
+}
+/*Form*/
+/*
+.form-color {
+    background-color: #c9c9c9;
+    color: black;
+}
+*/
+/*Przyciski*/
+
+.btn-Main {
+    background-color: #F64C72;
+    border-color: #F64C72;
+    color: white;
+}
+
+
+.btn-Main:hover {
+    background-color: #f5355c;
+}
+
+
+.btn-Main.focus,
+.btn-Main:focus {
+    box-shadow: 0 0 0 0.2rem #F64C72;
+}
+
+.btn-Main.disabled,
+.btn-Main:disabled {
+    background-color: #F64C72;
+    border-color: #F64C72;
+}
+
+.btn-Main:not([disabled]):not(.disabled).active,
+.btn-Main:not([disabled]):not(.disabled):active,
+.show > .btn-Main.dropdown-toggle {
+    color: #fff;
+    background-color: #F64C72;
+    border-color: #F64C72;
+    box-shadow: 0 0 0 0.2rem #F64C72;
+}
+
+.btn-Main:hover {
+    background-color: #f5355c;
+    color: white;
+    box-shadow: 0px 0px 8px #f5355c;
+}
+
+.btn-outline-primary {
+    border-color: #F64C72;
+    color: #F64C72;
+}
+
+
+.btn-outline-primary:hover {
+    background-color: #F64C72;
+    border-color: #F64C72;
+}
+
+.btn-outline-primary:after {
+    background-color: #F64C72;
+    border-color: #F64C72;
+    color: white;
+}
+
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: white;
+    background-color: transparent;
+}
+
+.btn-outline-primary:not([disabled]):not(.disabled).active,
+.btn-outline-primary:not([disabled]):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+    color: white;
+    background-color: #F64C72;
+    border-color: #F64C72;
+    box-shadow: 0 0 0 0.2rem #F64C72;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Przycisk do powiadomień */
+
+/* Styl odznaki w normalnym stanie */
+.bell-icon .badge {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Płynne przejście */
+}
+
+/* Zmiana kolorów odznaki podczas najechania na ikonę */
+.bell-icon:hover .badge {
+    background-color: #dc3545 !important; /* bg-danger */
+    color: white !important; /* text-white */
+    border: 3px solid white !important;
+    transform: scale(0.8) translate(-60%, -60%) !important;
+}
+
+/*Edycja użytkownika*/
+
+.tableColour {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.table-striped .tdColorMain {
+    background-color: #83677b;
+}
+
+.table-striped > .tdColorMain > tr:nth-of-type(odd) > * {
+    background-color: #83677b;
+    color: white;
+}
+
+.table th {
+    padding: 10px;
+    border: 1px black;
+}
+
+.table td {
+    border: 1px black;
+    padding: 15px;
+}
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 992px) {
+    /*Navbar*/
+    .nav-item {
+
+        margin: 0;
+        transition: .3s;
+    }
+
+    .nav-link {
+        padding-right: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        padding: 0;
+    }
+
+    .nav-item:hover {
+        background-color: white;
+        border-radius: 10px;
+        /*border-bottom-left-radius: 15px;*/
+        /*border-bottom-right-radius: 15px;*/
+    }
+
+    .nav-item:hover .nav-link {
+        color: #F64C72;
+
+    }
+    .navbar-nav .nav-link.active {
+        float: right;
+    }
+
+    .table th {
+        padding: 20px;
+    }
+
+    .table td {
+        padding: 0 30px;
+    }
+
+}
+
+@media (min-width: 1250px) {
+    .nav-item {
+        padding: 4px;
+        margin: 0;
+    }
+
+    .navbar {
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 1450px) {
+    .navbar {
+        font-size: 18px;
+    }
+
+    .navbar .container {
+        max-width: 1400px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .navbar-nav{
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        font-size: 1.5rem;
+    }
+    .offcanvas-title{
+        font-size: 1.5rem;
+    }
+    .navbar .container {
+        padding: 0px;
+    }
+    .navbar-toggler-icon{
+        color:white;
+    }
+    .navbar .nav-link {
+        padding-bottom: 1px;
+    }
+    .navbar .dropdown-menu .dropdown-item:hover{
+        color: var(--bs-nav-link-hover-color);
+        background-color: #f5355c;
+        font-weight: bold;
+    }
+    .nav-item{
+        width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 10px;
+        
+    }
+    .navbar-nav .nav-link.active {
+        margin-top: 30px;
+        color: white;
+    }
+
+    .list-inline-item {
+        background-color: rgb(248, 249, 250) !important;
+        border: none !important;
+    }
+
+    .navbar .nav-link .active {
+        color: white;
+    }
+
+
+}
