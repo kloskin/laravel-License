@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-light p-2 m-0 mb-3" style="background-color: #f5355c;">
+<nav class="navbar navbar-expand-lg sticky-top p-2 m-0 mb-3" style="background-color: #f5355c;">
     <div class="container">
         <!-- Toggle button -->
         <button class="navbar-dark navbar-toggler icon1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -25,6 +25,10 @@
             <div class="offcanvas-body" >
                 <div class="navbar-collapse" id="navbarNavAltMarkup">
                     <ul class="navbar-nav text-lg-center align-items-center">
+                        <li class="nav-item me-1">
+                            <!-- Zastąp 'index.php' właściwą trasą np. do składania wniosków o licencje -->
+                            <a class="nav-link" href="{{ route('licenses.index') }}">Lista licencji</a>
+                        </li>
                         <li class="nav-item me-1">
                             <!-- Zastąp 'index.php' właściwą trasą np. do składania wniosków o licencje -->
                             <a class="nav-link" href="{{ route('license-requests.create') }}">Wniosek o Licencje</a>
@@ -58,7 +62,8 @@
                         @endauth
                     </ul>
                 </div>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                
+                <div class="collapse navbar-collapse justify-content-end">
                     <ul class="navbar-nav mb-2 mb-lg-0 text-center align-items-center">
                         <li class="nav-item me-4 dropdown">
                             <a class="nav-link bell-icon" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
